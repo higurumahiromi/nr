@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hot Deals</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<script src="https://kit.fontawesome.com/1d602417a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="sidebar" class="sidebar">
+  <a href="#" class="closebtn" id="closeBtn">&times;</a>
+  <a href="#profile">Profile</a>
+  <a href="#profile">Cart</a>
+  <a href="#security">Security</a>
+  <a href="#notifications">Notifications</a>
+  <a href="#privacy">Privacy</a>
+  <a href="#language">Language</a>
+</div>
+<div class="popupblur" id="blur">
+	                <div id="popup" class="popup">
+                      <span class="popup-close" onclick="closepopup()">×</span>
+                      <label>Please choose an action.</label>
+	                    <div>
+                          <button>Add to Cart</button>
+                          <button>Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+	<div class="navbar">
+		<div class="firstpart">
+			<div class="logo">
+				<label class="textlogo">NR-<span class="highlight">finds</span></label>
+			</div>
+			<div class="navbtns">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="stores.html">Stores</a></li>
+					<li><a href="hotdeals.html">Hot Deals</a></li>
+					<li><a href="vouchers.html">Discount Vouchers</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="secondpart">
+			<button class="menubtn" id="toggleBtn"><i class="fa fa-bars"></i></button>
+		</div>
+	</div>
+	<div class="justcenter">
+	<div class="inthotdeals">
+		<div class="introtext">
+			<label class="first">Hot Deals</label>
+			<label class="second">Up to 50% off!!</label>
+		</div>
+	</div>
+	</div>
+	<div class="shops first">
+	        <div class="hotdealcat">
+	            <div class="longline"></div>
+	            <label class="name">Free Shipping</label>
+	            <div class="longline"></div>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/Sunflowers.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunflowers</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/settingspray.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Setting Spray</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/long-lasting.jpeg" alt="Product Image">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Long-lasting</label>
+	                    <label class="prodprice">₱65.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/sunscreen.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunscreen</label>
+	                    <label class="prodprice">₱60.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="shops first">
+	        <div class="hotdealcat">
+	            <div class="longline"></div>
+	            <label class="name">50% off</label>
+	            <div class="longline"></div>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/Sunflowers.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunflowers</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/settingspray.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Setting Spray</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/long-lasting.jpeg" alt="Product Image">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Long-lasting</label>
+	                    <label class="prodprice">₱65.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/sunscreen.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunscreen</label>
+	                    <label class="prodprice">₱60.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="shops first">
+	        <div class="hotdealcat">
+	            <div class="longline"></div>
+	            <label class="name">40% off</label>
+	            <div class="longline"></div>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/Sunflowers.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunflowers</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/settingspray.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Setting Spray</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/long-lasting.jpeg" alt="Product Image">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Long-lasting</label>
+	                    <label class="prodprice">₱65.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/sunscreen.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunscreen</label>
+	                    <label class="prodprice">₱60.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="shops first">
+	        <div class="hotdealcat">
+	            <div class="longline"></div>
+	            <label class="name">25% off</label>
+	            <div class="longline"></div>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/Sunflowers.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunflowers</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/settingspray.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Setting Spray</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/long-lasting.jpeg" alt="Product Image">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Long-lasting</label>
+	                    <label class="prodprice">₱65.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/sunscreen.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunscreen</label>
+	                    <label class="prodprice">₱60.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="shops first">
+	        <div class="hotdealcat">
+	            <div class="longline"></div>
+	            <label class="name">10% off</label>
+	            <div class="longline"></div>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/Sunflowers.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunflowers</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/settingspray.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Setting Spray</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/long-lasting.jpeg" alt="Product Image">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Long-lasting</label>
+	                    <label class="prodprice">₱65.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/sunscreen.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunscreen</label>
+	                    <label class="prodprice">₱60.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	 <div class="footer">
+      <div class="foot1">
+          <img src="../images/testimg.png">
+          <label class="footlogo">NR-finds</label>
+          <div class="footowner">
+              <label>By</label>
+              <label>Rzhyl Tamayo</label>
+          </div>
+      </div>
+      <div class="line"></div>
+      <div class="foot2">
+          <div class="help">
+              <label>Help</label>
+              <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms of service</a></li>
+              </ul>
+          </div>
+          <div class="subscribe">
+              <label>Subscribe to get 40% off</label>
+              <form>
+                  <input type="email" class="email" placeholder="Email...">
+                  <button>Subscribe</button>
+              </form>
+          </div>
+          <div class="links">
+          <label>Get in touch</label>
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+      </div>
+      </div>
+  </div>
+  <div class="copy">
+      <label class="copyright">&copy. 2024 NR-finds. All rights reserved.</label>
+  </div>
+  <script src="../script/script.js"></script>
+</body>
+</html>

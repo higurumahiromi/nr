@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stores</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<script src="https://kit.fontawesome.com/1d602417a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="sidebar" class="sidebar">
+  <a href="#" class="closebtn" id="closeBtn">&times;</a>
+  <a href="#profile">Profile</a>
+  <a href="#profile">Cart</a>
+  <a href="#security">Security</a>
+  <a href="#notifications">Notifications</a>
+  <a href="#privacy">Privacy</a>
+  <a href="#language">Language</a>
+</div>
+	<div class="navbar">
+		<div class="firstpart">
+			<div class="logo">
+				<label class="textlogo">NR-<span class="highlight">finds</span></label>
+			</div>
+			<div class="navbtns">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="stores.html">Stores</a></li>
+					<li><a href="hotdeals.html">Hot Deals</a></li>
+					<li><a href="vouchers.html">Discount Vouchers</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="secondpart">
+			<button class="menubtn" id="toggleBtn"><i class="fa fa-bars"></i></button>
+		</div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Bulaklakin</label>
+	            <div class="longline"></div>
+	            <a href="storepages/bulaklakin.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="popupblur" id="blur">
+	                <div id="popup" class="popup">
+                      <span class="popup-close" onclick="closepopup()">×</span>
+                      <label>Please choose an action.</label>
+	                    <div>
+                          <button>Add to Cart</button>
+                          <button>Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/MadonnaLily.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Madonna Lily</label>
+	                    <label class="prodprice">₱120.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/Sunflowers.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sunflowers</label>
+	                    <label class="prodprice">₱120.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/Mimosa.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Mimosa</label>
+	                    <label class="prodprice">₱120.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/bulaklakin/golden-rayedlily.png" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Golden-rayed Lily</label>
+	                    <label class="prodprice">₱120.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Stuffies City</label>
+	            <div class="longline"></div>
+	            <a href="storepages/stuffies.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="popupblur" id="blur">
+	                <div id="popup" class="popup">
+                      <span class="popup-close" onclick="closepopup()">×</span>
+                      <label>Please choose an action.</label>
+	                    <div>
+                          <button>Add to Cart</button>
+                          <button>Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/stuffiescity/tomnjerry.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Tom & Jerry</label>
+	                    <label class="prodprice">₱300.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/stuffiescity/sanrio.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sanrio Bouquet</label>
+	                    <label class="prodprice">₱300.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/stuffiescity/dog.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Dog</label>
+	                    <label class="prodprice">₱300.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/stuffiescity/tata.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Tata</label>
+	                    <label class="prodprice">₱300.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Sunshine's Jewel</label>
+	            <div class="longline"></div>
+	            <a href="storepages/sunshinejewel.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/sunshinejewel/earrings.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Ear Rings</label>
+	                    <label class="prodprice">₱170.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/sunshinejewel/jewelset.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Jewelry Set</label>
+	                    <label class="prodprice">₱580.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/sunshinejewel/ringnbracelet.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Ear Rings & Bracelet Set</label>
+	                    <label class="prodprice">₱250.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/sunshinejewel/earrings2.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Ear Rings</label>
+	                    <label class="prodprice">₱170.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Aemon's Sketchy Smiles</label>
+	            <div class="longline"></div>
+	            <a href="storepages/aemon.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/aemon/drawingset.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Drawing Set</label>
+	                    <label class="prodprice">₱570.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/aemon/fineliner.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Fineliner</label>
+	                    <label class="prodprice">₱320.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/aemon/kneadableeraser.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Kneadable Eraser</label>
+	                    <label class="prodprice">₱60.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/aemon/mechanicalpencil.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Mechanical Pencil</label>
+	                    <label class="prodprice">₱40.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Crispy Egg ni Jay</label>
+	            <div class="longline"></div>
+	            <a href="storepages/eggnijay.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/crispyegg/crispy.jpg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Crispy Egg</label>
+	                    <label class="prodprice">₱110.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/crispyegg/withcheese.jpg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Crispy Egg with Cheese</label>
+	                    <label class="prodprice">₱110.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/crispyegg/withpotato.jpg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Crispy Egg with Potato</label>
+	                    <label class="prodprice">₱110.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/crispyegg/pattystyle.jpg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Crispy Egg Patty Style</label>
+	                    <label class="prodprice">₱110.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Rence Clothing</label>
+	            <div class="longline"></div>
+	            <a href="storepages/rence.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/renceclothing/pants.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Pants Bundle (6pcs)</label>
+	                    <label class="prodprice">₱1000.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/renceclothing/polo.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Polo Long Sleeve Bundle(8pcs)</label>
+	                    <label class="prodprice">₱1200.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/renceclothing/tshirt.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">T-shit Bundle(9pcs)</label>
+	                    <label class="prodprice">₱1500.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/renceclothing/white.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">White T-shirts Bundle(9pcs)</label>
+	                    <label class="prodprice">₱1100.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Trix Cosmetics</label>
+	            <div class="longline"></div>
+	            <a href="storepages/trix.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/eyeshadow.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Eyeshadow Palette</label>
+	                    <label class="prodprice">₱89.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/concealer.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Concealer</label>
+	                    <label class="prodprice">₱48.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/settingspray.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Setting Spray</label>
+	                    <label class="prodprice">₱100.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/trix/mascara.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Mascara with Primer</label>
+	                    <label class="prodprice">₱110.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Kathy's Longlasting</label>
+	            <div class="longline"></div>
+	            <a href="storepages/kath.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/wildblue.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Upsilōn Wild Blue</label>
+	                    <label class="prodprice">₱120.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/myway.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">My Way Gorgio Arman</label>
+	                    <label class="prodprice">₱58.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/flowerbomb.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Flowerbomb Victor&Rolf</label>
+	                    <label class="prodprice">₱98.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/kathy/long-lasting.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Long-lasting Perfumes</label>
+	                    <label class="prodprice">₱130.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Noki Socks</label>
+	            <div class="longline"></div>
+	            <a href="storepages/noki.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/nokisocks/white.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">White Socks</label>
+	                    <label class="prodprice">₱100.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/nokisocks/black.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Black Socks</label>
+	                    <label class="prodprice">₱100.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/nokisocks/sport.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Sport Socks</label>
+	                    <label class="prodprice">₱100.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/nokisocks/bundle.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Socks Bundle</label>
+	                    <label class="prodprice">₱170.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Lucia's Hijab</label>
+	            <div class="longline"></div>
+	            <a href="storepages/lucia.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/lucia/smoothie.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Hijab Smoothie</label>
+	                    <label class="prodprice">₱70.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/lucia/instant.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Instant Hijab</label>
+	                    <label class="prodprice">₱50.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/lucia/withcrown.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Inner with Crown</label>
+	                    <label class="prodprice">₱60.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/lucia/withdress.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Hijab with Dress</label>
+	                    <label class="prodprice">₱350.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="stores">
+	    <div class="shops first">
+	        <div class="storename">
+	            <div class="shortline"></div>
+	            <label class="name">Donna's Radiant Glow</label>
+	            <div class="longline"></div>
+	            <a href="storepages/donna.html"><label class="view">View Shop</label></a>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/lipcare.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Lip Care</label>
+	                    <label class="prodprice">₱95.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/cleanser.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Cleanser</label>
+	                    <label class="prodprice">₱160.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/toner.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Toner</label>
+	                    <label class="prodprice">₱150.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../images/donna/serum.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Serum</label>
+	                    <label class="prodprice">₱180.00</label>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="footer">
+      <div class="foot1">
+          <img src="../images/testimg.png">
+          <label class="footlogo">NR-finds</label>
+          <div class="footowner">
+              <label>By</label>
+              <label>Rzhyl Tamayo</label>
+          </div>
+      </div>
+      <div class="line"></div>
+      <div class="foot2">
+          <div class="help">
+              <label>Help</label>
+              <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms of service</a></li>
+              </ul>
+          </div>
+          <div class="subscribe">
+              <label>Subscribe to get 40% off</label>
+              <form>
+                  <input type="email" class="email" placeholder="Email...">
+                  <button>Subscribe</button>
+              </form>
+          </div>
+          <div class="links">
+          <label>Get in touch</label>
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+      </div>
+      </div>
+  </div>
+  <div class="copy">
+      <label class="copyright">&copy. 2024 NR-finds. All rights reserved.</label>
+  </div>
+  <script src="../script/script.js"></script>
+</body>
+</html>

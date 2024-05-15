@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sunshine's Jewel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+	<script src="https://kit.fontawesome.com/1d602417a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="popupblur" id="bluro">
+	                <div id="popupo" class="owner">
+	                  <div class="owner2">
+                      <span class="popup-close" onclick="closepopup()">×</span>
+                      <div>
+                          <img class="ownerimg" src="../../images/profiles/erica.jpeg" alt="Product Image">
+                      </div>
+                      <div class="ownerinfo">
+                          <label class="ownername">Erica Robles</label>
+                          <label class="otherinfo">My main products are jewelry</label>
+                          <label class="otherinfo">Owner of Sunshine's Jewel</label>
+                          <label class="otherinfo">09516611271</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+   <div class="popupblur" id="blur">
+	                <div id="popup" class="popup">
+                      <span class="popup-close" onclick="closepopup()">×</span>
+                      <label>Please choose an action.</label>
+	                    <div>
+                          <button>Add to Cart</button>
+                          <button>Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+   <div class="storecontent">
+	    <button onclick="back()" class="backbutton"><i class="fa fa-arrow-left"></i></button>
+	    <div class="shops first">
+	        <div class="storename sname">
+	            <label class="name"> Welcome to Sunshine's Jewelry!!</label>
+	            <label onclick="popupowner()" class="view">View Owner</label>
+	        </div>
+	        <div class="storeproducts">
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../../images/sunshinejewel/earrings.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Ear Rings</label>
+	                    <label class="prodprice">₱170.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../../images/sunshinejewel/jewelset.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Jewelry Set</label>
+	                    <label class="prodprice">₱580.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../../images/sunshinejewel/ringnbracelet.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Ear Rings & Bracelet Set</label>
+	                    <label class="prodprice">₱250.00</label>
+	                </div>
+	            </div>
+	            <div class="card" onclick="togglePopup()">
+	                <div class="prodimg">
+	                <img src="../../images/sunshinejewel/earrings2.jpeg" alt="">
+	                </div>
+	                <div class="prodinfo">
+	                    <label class="prodname">Ear Rings</label>
+	                    <label class="prodprice">₱170.00</label>
+	                </div>
+	            </div>
+	        </div>
+	     </div>
+	  </div>
+  <div class="footer">
+      <div class="foot1">
+          <img src="../../images/testimg.png">
+          <label class="footlogo">NR-finds</label>
+          <div class="footowner">
+              <label>By</label>
+              <label>Rzhyl Tamayo</label>
+          </div>
+      </div>
+      <div class="line"></div>
+      <div class="foot2">
+          <div class="help">
+              <label>Help</label>
+              <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms of service</a></li>
+              </ul>
+          </div>
+          <div class="subscribe">
+              <label>Subscribe to get 40% off</label>
+              <form>
+                  <input type="email" class="email" placeholder="Email...">
+                  <button>Subscribe</button>
+              </form>
+          </div>
+          <div class="links">
+          <label>Get in touch</label>
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+          </div>
+      </div>
+  </div>
+  <div class="copy">
+      <label class="copyright">&copy. 2024 NR-finds. All rights reserved.</label>
+  </div>
+  <script src="../../script/script.js"></script>
+</body>
+</html>

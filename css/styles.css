@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	color: #24252a;
+}
+
+button{
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+
+.textlogo{
+	font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #9F4C4C;
+}
+
+.highlight{
+	color: #24252a;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	margin: 0 80px;
+}
+
+.firstpart{
+	display: flex;
+}
+
+.firstpart ul{
+	display: flex;
+	margin-left: 40px;
+}
+
+.firstpart ul li{
+	padding: 0 20px;
+	font-size: 30px;
+	position: relative;
+	top: 20px;
+}
+
+.menubtn{
+	font-size: 30px;
+	position: relative;
+	top: 20px;
+}
+
+.introduction{
+	width: 100%;
+	background-image: url(../images/cartkeyboard.png);
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+}
+
+.introduction label{
+	  font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+}
+
+.introtext{
+	top: 150px;
+	position: relative;
+}
+
+.first{
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.second{
+    font-size: 30px;
+    color: rgba(255,255,255,0.8);
+}
+
+.shopnow{
+    color: #fff;
+    padding: 20px 30px;
+    border: 4px solid #ffffff;
+    font-size: 25px;
+    position: relative;
+    top: 60px;
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.features div{
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.features label{
+    display: block;
+    margin: 15px;
+    color: black;
+}
+
+.featurebig{
+    font-size: 30px;
+}
+
+.featuresmall{
+    font-size: 20px;
+}
+
+.features button{
+    font-size: 25px;
+    padding: 15px 20px;
+    color: black;
+    border: 4px solid black;
+}
+
+.categories{
+    margin: 20px 80px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 40px;
+    border-radius: 50px;
+    margin-top: 70px;
+}
+
+.categories button{
+    border: 4px solid #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.bulaklakin{
+    background-image: url("../images/bulaklakin/bulaklakin.png");
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    margin-right: 15px;
+}
+
+.categories label{
+    color: #fff;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+}
+
+.titlebutton{
+    position: relative;
+    bottom: -50px;
+}
+
+.forflex{
+    display: flex;
+}
+
+.secstore{
+    background-image: url("../images/stuffiescity/stuffiescity.png");
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.thistore{
+    background-image: url("../images/sunshinejewel/sunshinejewel.png");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 815px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.medium{
+    bottom: -70px;
+}
+
+.foustore{
+    background-image: url("../images/aemon/aemon.png");
+    background-position: center;
+    background-size: cover;
+    height: 495px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    margin-left: 15px;
+}
+
+.long{
+    bottom: -275px;
+}
+
+.fifstore{
+    background-image: url("../images/crispyegg/crispyegg.png");
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    margin-right: 15px;
+}
+
+.sixstore{
+    background-image: url("../images/renceclothing/renceclothing.png");
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    margin-right: 15px;
+}
+
+.sevstore{
+    background-image: url("../images/trix/trix.png");
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.fifsev{
+    margin-top: 15px;
+}
+
+.eigstore{
+    background-image: url("../images/kathy/kathy.png");
+    background-position: center;
+    background-size: cover;
+    height: 495px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.ninstore{
+    background-image: url("../images/nokisocks/nokisocks.png");
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 815px;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.tenth{
+    background-image: url('../images/lucia/lucia.png');
+}
+
+.eleventh{
+    background-image: url('../images/donna/donna.png');
+}
+
+.footer{
+    margin: 0 80px;
+    margin-top: 100px;
+}
+
+.foot1{
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footlogo{
+	  font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #313530;
+    margin: 0 20px;
+}
+
+.foot1 img{
+    width: 70px;
+    border: 1px solid black;
+}
+
+.footowner label{
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.line{
+    width: 100%;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.foot2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+}
+
+.foot2 label{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+}
+
+.foot2 ul{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.foot2 ul li{
+    margin: 10px 0;
+}
+
+.foot2 ul li a{
+    font-size: 20px;
+}
+
+.subscribe label{
+    display: block;
+}
+
+.subscribe form{
+    display: flex;
+    align-items: center;
+}
+
+.email{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 0;
+    height: 40px;
+    width: 400px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.subscribe button{
+    padding: 11px 20px;
+    font-size: 25px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-left: 0;
+}
+
+.links ul{
+    display: flex;
+}
+
+.links a{
+    margin: 0 10px;
+}
+
+.links i{
+    font-size: 50px;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.copy{
+    justify-content: center;
+    display: flex;
+}
+
+.stores{
+    margin: 0px 80px;
+    padding: 40px;
+    padding-top: 20px;
+    border-radius: 50px;
+}
+
+.storename{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.longline{
+    background-color: rgba(0,0,0,0.7);
+    height: 4px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.shortline{
+    background-color: rgba(0,0,0,0.7);
+    height: 4px;
+    width: 5%;
+    border-radius: 5px;
+}
+
+.name{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.view{
+    padding: 10px 20px;
+    font-size: 30px;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+
+.storeproducts{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    padding: 20px;
+    width: 300px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.prodimg{
+    display: flex;
+    justify-content: center;
+}
+
+.card img{
+    width: 90%;
+}
+
+.card label{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.shops{
+    margin-top: 40px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 300px;
+  }
+
+.popupblur{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    display: none;
+    margin: 0;
+    top: 0;
+    position: fixed;
+}
+  
+.popup-close {
+    position: absolute;
+    top: -3px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  
+.popup label{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.popup div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.popup button{
+    margin: 10px 20px;
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.storecontent{
+    padding: 50px 90px;
+}
+
+.backbutton{
+    font-size: 30px;
+}
+
+.sname{
+    margin: 0 50px;
+}
+
+.owner{
+    display: none;
+    position: fixed;
+    left: 22%;
+    top: 20%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.ownerimg{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.owner2{
+    display: flex;
+}
+
+.owner2 label{
+    display: block;
+    margin: 15px 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+.ownername{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.otherinfo{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.justcenter{
+    display: flex;
+    justify-content: center;
+}
+
+.inthotdeals{
+	background-image: url(../images/hotdeals.svg);
+	height: 440px;
+	width: 870px;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	border-radius: 30px;
+	margin-bottom: 50px;
+}
+
+.inthotdeals label{
+	  font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+}
+
+.introtext{
+	top: 150px;
+	position: relative;
+}
+
+.inthotdeals .first{
+	font-size: 80px;
+	color: black;
+}
+
+.inthotdeals .second{
+    font-size: 30px;
+    color: rgba(0,0,0,0.7);
+}
+
+.hotdealcat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+.hotdealcat .longline{
+    background-color: rgba(0,0,0,0.7);
+    height: 4px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.bottom{
+    margin-top: 25px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left: 1px solid black;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar.active {
+  width: 250px;
+}
+
+.vouchersection{
+    margin: 30px 70px;
+}
+
+.voucherscard{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.voucherinfo label{
+    font-size: 20px;
+    text-align: left;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.voucherinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.voucherinfo button{
+    padding: 10px 15px;
+    border: 3px solid black;
+    font-size: 20px;
+}
+
+.aboutbg{
+    height: 200px;
+}
+
+.websiteowner{
+    position: relative;
+    top: -100px;
+}
+
+.webownerimg{
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+.websiteowner label{
+    display: block;
+    text-align: center;
+}
+
+.webownername{
+    font-size: 40px;
+}
+
+.ownerrole{
+    font-size: 25px;
+    color: gray;
+}
+
+.center{
+    justify-content: center;
+    display: flex;
+}
+
+.logotagline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 150px;
+}
+
+.logotagline .textlogo{
+    font-size: 80px;
+}
+
+.abouttagline{
+    font-size: 40px;
+    width: 700px;
+}
+
+.aboutparagraph{
+    font-size: 40px;
+    text-align: justify;
+    margin: 40px 100px;
+}
